@@ -29,6 +29,12 @@ Everything runs locally. No account needed. No internet required.
 
 ---
 
+<p align="center">
+  <img src="resources/assets/Prev2.png" alt="Project Flow screenshot" width="100%" />
+  <br />
+  <em>Main project view inside Project Flow</em>
+</p>
+
 ## Features
 
 | | Feature | Description |
