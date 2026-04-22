@@ -65,6 +65,34 @@ Everything runs locally. No account needed. No internet required.
 
 ---
 
+## Sections
+
+### Overview
+A snapshot of the project at a glance — title, tags, status, and progress in one place. Everything you need to orient yourself before diving in.
+
+### Renders
+Final outputs, versioned deliverables, and visual results. Drop in your renders and keep a clean record of what has been produced and when.
+
+### Previews
+Work-in-progress media — playblasts, quick tests, and iteration shots. A lightweight way to track how the project is evolving visually without cluttering your renders.
+
+### References
+A curated board of inspiration, moodboards, links, and research. Keeps everything that informed the project in one place, tagged and easy to browse.
+
+### Notes
+A markdown scratchpad for technical notes, production thinking, and reminders. Freeform and autosaved — write however you think.
+
+### Pipeline
+A structured view of the production stages from concept to delivery. Mark steps as complete, reorder them, and keep the whole team aligned on where the project stands.
+
+### Node Map
+A visual diagram of the project's process logic — how elements connect, what depends on what, and how the work is structured. Useful for complex pipelines where a list isn't enough.
+
+### Discoveries
+A space for lessons learned, unexpected findings, and things worth remembering. Captures the knowledge that usually gets lost between projects.
+
+---
+
 ## Tech Stack
 
 | Layer | Technology |
