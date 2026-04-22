@@ -1,0 +1,99 @@
+{
+  "name": "projectflow",
+  "version": "1.0.0-beta.1",
+  "description": "A minimal, elegant VFX project manager for artists — organize renders, previews, references, and pipeline stages in one calm desktop app.",
+  "author": "Adrián García <contact@adriangarcia.dev>",
+  "license": "MIT",
+  "main": "electron/main.js",
+  "homepage": "https://github.com/adriangarcia/projectflow",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adriangarcia/projectflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adriangarcia/projectflow/issues"
+  },
+  "keywords": [
+    "vfx",
+    "project-manager",
+    "electron",
+    "houdini",
+    "nuke",
+    "blender",
+    "3d",
+    "pipeline",
+    "desktop"
+  ],
+  "scripts": {
+    "dev": "concurrently -k \"vite\" \"wait-on tcp:5173 && cross-env NODE_ENV=development electron .\"",
+    "build": "vite build",
+    "dist": "npm run build && electron-builder",
+    "dist:win": "npm run build && electron-builder --win --x64",
+    "dist:mac": "npm run build && electron-builder --mac",
+    "dist:linux": "npm run build && electron-builder --linux",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "framer-motion": "^11.3.0",
+    "lucide-react": "^0.400.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-dropzone": "^14.2.3",
+    "react-markdown": "^9.0.1",
+    "react-router-dom": "^6.25.0",
+    "remark-gfm": "^4.0.0",
+    "uuid": "^10.0.0",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/uuid": "^10.0.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^33.0.0",
+    "electron-builder": "^26.0.0",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.2",
+    "vite": "^6.0.0",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.projectflow.app",
+    "productName": "Project Flow",
+    "asar": true,
+    "directories": {
+      "output": "release",
+      "buildResources": "resources"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [{ "target": "nsis", "arch": ["x64"] }],
+      "icon": "resources/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "resources/icon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "resources/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Project Flow"
+    }
+  }
+}
