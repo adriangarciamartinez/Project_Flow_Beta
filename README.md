@@ -29,12 +29,6 @@ Everything runs locally. No account needed. No internet required.
 
 ---
 
-<p align="center">
-  <img src="resources/assets/Prev2.png" alt="Project Flow screenshot" width="100%" />
-  <br />
-  <em>Main project view inside Project Flow</em>
-</p>
-
 ## Features
 
 | | Feature | Description |
@@ -51,7 +45,23 @@ Everything runs locally. No account needed. No internet required.
 
 ## Screenshots
 
-> _Screenshots coming soon. The UI is dark, minimal, and editorial in feel._
+<p align="center">
+  <img src="resources/assets/Prev2.png" alt="Project Flow screenshot 1" width="100%" />
+</p>
+
+<p align="center">
+  <img src="resources/assets/Prev5.png" alt="Project Flow screenshot 2" width="100%" />
+</p>
+
+<p align="center">
+  <img src="resources/assets/Prev6.png" alt="Project Flow screenshot 3" width="100%" />
+</p>
+
+<p align="center">
+  <img src="resources/assets/Prev7.png" alt="Project Flow screenshot 4" width="100%" />
+</p>
+
+>  The UI is dark, minimal, and editorial in feel._
 
 ---
 
